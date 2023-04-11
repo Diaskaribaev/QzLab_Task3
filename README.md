@@ -16,7 +16,7 @@
 ![Снимок экрана (233)](https://user-images.githubusercontent.com/51242971/231047738-87b85d7d-e9f6-4318-828c-faaedfb20956.png)
 
 ## Here is the finally our website with our information from back-end
-### I have added to row link with "<a>" "</>" tag to show in the next page students table and also for this I have crated new template in templates file and new route
+### I have added to row link with "<а>" "</>" tag to show in the next page students table and also for this I have crated new template in templates file and new route
 ![Снимок экрана (231)](https://user-images.githubusercontent.com/51242971/231047829-c32e0ee4-070b-461f-83ee-b2484076cc5e.png)
 
 ![Снимок экрана (232)](https://user-images.githubusercontent.com/51242971/231047839-ea042006-21bf-4e4e-89c8-75cd95b2eca4.png)
