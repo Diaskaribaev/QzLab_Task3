@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <template id="organizationsss" >
+        <t t-call="website.layout">
+            <title>University</title>
+             <div class="oe_structure" />
+            <div class="oe_structure">
+                <div class="container">
+                    <t t-foreach = "organizations" t-as = "organization">
+                        <p>
+                            <a t-attf-href="/university/{{slug(organization)}}">
+                                <t t-esc="organization.name"/>
+                                <br/>
+                                found year:
+                                <t t-esc="organization.found_year"/>
+                            </a>
+                        </p>
+                    </t>
+
+                </div>
+
+            </div>
+
+
+
+
+
+
+        </t>
+    </template>
+    <template id="university-detail">
+        <t t-call="portal.portal_layout" >
+            <t t-call="portal.portal_table">
+            <table class="table rounded mb-0 bg-white o_portal_my_doc_table">
+                <thread>
+                    <tr class="active">
+                        <th class="text-center">Student Name</th>
+                        <th class="text-center">University</th>
+
+                        <th class="text-center">Speciality</th>
+                        <th class="text-center">Birth date</th>
+
+
+                    </tr>
+                <tbody>
+                    <t t-foreach = "students" t-as = "student">
+                        <t t-if="student.university_name_id.name">
+                            <tr>
+                            <td class="text-center">
+
+                                 <t t-esc="student.student_name"/>
+
+
+
+                            </td>
+                            <td class="text-center">
+
+                                 <t t-esc="student.university_name_id.name"/>
+
+
+
+                            </td>
+                            <td class="text-center">
+
+                               <t t-esc="student.speciality_name.name "/>
+
+
+
+                            </td>
+                            <td class="text-center">
+
+                                <t t-esc="student.year_of_birth"/>
+
+
+
+                            </td>
+
+
+                        </tr>
+                        </t>
+                    </t>
+
+                </tbody>
+
+
+
+
+
+
+
+
+                </thread>
+
+            </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </t>
+
+        </t>
+
+
+    </template>
+
+
+    <template id="university_list_view">
+        <t t-call="portal.portal_layout" >
+            <t t-call="portal.portal_table">
+            <table class="table rounded mb-0 bg-white o_portal_my_doc_table">
+                <thread>
+                    <tr class="active">
+                        <th class="text-center">Name</th>
+                        <th class="text-center">Found year</th>
+
+
+                    </tr>
+                <tbody>
+                    <t t-foreach = "organizations" t-as = "organization">
+                        <tr>
+                            <td class="text-center">
+                                <a t-attf-href="/university/{{slug(organization)}}">
+                                <t t-esc="organization.name"/>
+
+
+                            </a>
+                            </td>
+                            <td class="text-center">
+                                <a t-attf-href="/university/{{slug(organization)}}">
+                                <t t-esc="organization.found_year"/>
+
+
+                            </a>
+                            </td>
+
+
+                        </tr>
+                    </t>
+                </tbody>
+
+
+
+
+
+
+
+
+                </thread>
+
+            </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </t>
+
+        </t>
+
+
+    </template>
+
+
+
+</odoo>
+
