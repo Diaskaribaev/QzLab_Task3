@@ -12,8 +12,10 @@
 ## I also added new folder "controller" and created controllers.py file to configure front-end module and I added my routes
 ![изображение](https://user-images.githubusercontent.com/51242971/231047610-ea4f1a45-8fdc-4415-8747-46b9b69c367c.png)
 
-## Created for this controllers.py new file in views folder named templates.xml
-![Снимок экрана (233)](https://user-images.githubusercontent.com/51242971/231047738-87b85d7d-e9f6-4318-828c-faaedfb20956.png)
+## Created for this controllers.py new file in views file named templates.xml and added templates
+#### full code you can see at uploded files
+![Снимок экрана (235)](https://user-images.githubusercontent.com/51242971/231049387-19a7974c-f61d-4eea-85a6-0066ecc4c382.png)
+
 
 ## Here is the finally our website with our information from back-end
 ### I have added to row link with "<а " "</>" tag to show in the next page students table and also for this I have crated new template in templates file and new route
