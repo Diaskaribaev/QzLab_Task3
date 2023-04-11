@@ -1,5 +1,5 @@
 from odoo import http
-from odoo.addons.portal.controllers.portal import CustomerPortal
+
 
 
 class University(http.Controller):
